@@ -1,10 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 class HaloGeneric
 {
     public void SapaUser(String X)
     {
-        Console.WriteLine("Masukkan nama " + X); 
+        Console.WriteLine("Masukkan nama " + X);
     }
 }
 
@@ -19,6 +18,7 @@ class DataGeneric<T>
     public void PrintData()
     {
         Console.WriteLine("Data yang tersimpan adalah: " + data);
+
     }
 }
 
@@ -30,8 +30,8 @@ class main
         HaloGeneric halo = new HaloGeneric();
         String x = Console.ReadLine();
         halo.SapaUser(x);
-
         DataGeneric<String> data = new DataGeneric<string>("1302213030");
         data.PrintData();
+
     }
 }
